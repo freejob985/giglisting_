@@ -131,6 +131,7 @@ class ItemClaimController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
         $request->validate([
             'item_claims_item_id' => 'required|numeric',
             'item_claim_full_name' => 'required|max:255',
