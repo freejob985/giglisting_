@@ -39,6 +39,8 @@ class ItemClaim extends Model
         'item_claim_additional_upload',
         'item_claim_status',
         'item_claim_reply',
+        'individuals',
+        'Date',
     ];
 
     /**
