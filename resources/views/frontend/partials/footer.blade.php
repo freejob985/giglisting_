@@ -19,38 +19,38 @@
                         <h2 class="footer-heading mb-4"><strong>{{ __('frontend.footer.navigations') }}</strong></h2>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="http://gigworldgo.com/faq"> Faq</a>
+                                <a href="http://gigworldgo.com/faq">{{ \App\Setting::lang("Faq",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/price-plan"> Price Plan</a>
+                                <a href="http://gigworldgo.com/price-plan">{{ \App\Setting::lang("Price Plan",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/blog"> Blog</a>
+                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::lang("Blog",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/p/33/terms-and-conditions"> Terms and conditions</a>
+                                <a href="http://gigworldgo.com/p/33/terms-and-conditions">{{ \App\Setting::lang("Terms and conditions",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/p/34/privacy-policy"> Privacy policy</a>
+                                <a href="http://gigworldgo.com/p/34/privacy-policy">{{ \App\Setting::lang("Privacy policy",Session::get('lang')) }} </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="http://gigworldgo.com"> Home</a>
+                                <a href="http://gigworldgo.com">{{ \App\Setting::lang("Home",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/about"> About Us</a>
+                                <a href="http://gigworldgo.com/about">{{ \App\Setting::lang(" About Us",Session::get('lang')) }}</a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/our-works"> Our Works</a>
+                                <a href="http://gigworldgo.com/our-works">{{ \App\Setting::lang("Our Works",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/blog"> Blog</a>
+                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::lang("Blog",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/contact"> Contact</a>
+                                <a href="http://gigworldgo.com/contact">{{ \App\Setting::lang("Contact",Session::get('lang')) }} </a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="col-md-3">
                 <div class="footer-widget widget">
-                    <h4 class="widget-title">Contact us</h4>
+                    <h4 class="widget-title">{{ \App\Setting::lang("Contact us",Session::get('lang')) }}</h4>
                     <ul class="contact_info_list">
                         <li class="single-info-item">
                             <div class="icon">

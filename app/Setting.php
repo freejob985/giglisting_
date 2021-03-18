@@ -43,7 +43,14 @@ class Setting extends Model
         return $lang;
 
     }
+    static  function footer($val, $lan)
+    {
+        //   {{ \App\Setting::lang("","") }}
+        $lang = DB::table('lang')->where('key', $val)->where('lang', $lan)->value('val');
+        // dd($lang);
+        return $lang;
 
+    }
     const SITE_HEADER_ENABLED = 1;
     const SITE_HEADER_DISABLED = 0;
 
