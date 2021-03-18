@@ -119,7 +119,7 @@
 
                             <div class="col-md-6">
                                 <label for="Date" class="text-black">Date</label>
-                                <input id="Date" type="text" class="form-control @error('Date') is-invalid @enderror" name="Date" value="{{ old('Date') }}">
+                                <input id="Date" type="date" class="form-control @error('Date') is-invalid @enderror" name="Date" value="{{ old('Date') }}">
                                 @error('Date')
                                 <span class="invalid-tooltip">
                                         <strong>{{ $message }}</strong>
