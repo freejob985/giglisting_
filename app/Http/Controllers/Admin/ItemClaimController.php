@@ -131,7 +131,7 @@ class ItemClaimController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+      //  dd($request->all());
         $request->validate([
             'item_claims_item_id' => 'required|numeric',
             'item_claim_full_name' => 'required|max:255',
@@ -174,6 +174,11 @@ class ItemClaimController extends Controller
         $new_item_claim->item_claim_additional_proof = $item_claim_additional_proof;
         $new_item_claim->item_claim_additional_upload = $item_claim_additional_proof_file_name;
         $new_item_claim->item_claim_status = ItemClaim::ITEM_CLAIM_STATUS_REQUESTED;
+
+        $new_item_claim->individuals =  $request->individuals;
+
+        $new_item_claim->Date = $request->Date;
+
         $new_item_claim->save();
 
         \Session::flash('flash_message', __('item_claim.alert.admin-item-claim-created-success'));
