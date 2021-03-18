@@ -46,7 +46,7 @@ class Setting extends Model
     static  function footer($val, $lan)
     {
         //   {{ \App\Setting::lang("","") }}
-        $lang = DB::table('lang')->where('key', $val)->where('lang', $lan)->value('val');
+        $lang = DB::table('footer')->where('key', $val)->where('lang', $lan)->value('val');
         // dd($lang);
         return $lang;
 
