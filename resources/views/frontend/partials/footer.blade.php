@@ -19,38 +19,38 @@
                         <h2 class="footer-heading mb-4"><strong>{{ __('frontend.footer.navigations') }}</strong></h2>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="http://gigworldgo.com/faq">{{ \App\Setting::lang("Faq",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/faq">{{ \App\Setting::footer("Faq",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/price-plan">{{ \App\Setting::lang("Price Plan",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/price-plan">{{ \App\Setting::footer("Price Plan",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::lang("Blog",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::footer("Blog",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/p/33/terms-and-conditions">{{ \App\Setting::lang("Terms and conditions",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/p/33/terms-and-conditions">{{ \App\Setting::footer("Terms and conditions",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/p/34/privacy-policy">{{ \App\Setting::lang("Privacy policy",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/p/34/privacy-policy">{{ \App\Setting::footer("Privacy policy",Session::get('lang')) }} </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="http://gigworldgo.com">{{ \App\Setting::lang("Home",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com">{{ \App\Setting::footer("Home",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/about">{{ \App\Setting::lang(" About Us",Session::get('lang')) }}</a>
+                                <a href="http://gigworldgo.com/about">{{ \App\Setting::footer(" About Us",Session::get('lang')) }}</a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/our-works">{{ \App\Setting::lang("Our Works",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/our-works">{{ \App\Setting::footer("Our Works",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::lang("Blog",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/blog">{{ \App\Setting::footer("Blog",Session::get('lang')) }} </a>
                             </li>
                             <li>
-                                <a href="http://gigworldgo.com/contact">{{ \App\Setting::lang("Contact",Session::get('lang')) }} </a>
+                                <a href="http://gigworldgo.com/contact">{{ \App\Setting::footer("Contact",Session::get('lang')) }} </a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="col-md-3">
                 <div class="footer-widget widget">
-                    <h4 class="widget-title">{{ \App\Setting::lang("Contact us",Session::get('lang')) }}</h4>
+                    <h4 class="widget-title">{{ \App\Setting::footer("Contact us",Session::get('lang')) }}</h4>
                     <ul class="contact_info_list">
                         <li class="single-info-item">
                             <div class="icon">
