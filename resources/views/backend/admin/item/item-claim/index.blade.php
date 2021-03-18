@@ -63,6 +63,8 @@
                                 <th>{{ __('item_claim.claim-full-name') }}</th>
                                 <th>{{ __('item_claim.claim-status') }}</th>
                                 <th>{{ __('backend.shared.action') }}</th>
+                                <th>individuals</th>
+                                <th>Date</th>
                             </tr>
                             </thead>
                             <tfoot>
