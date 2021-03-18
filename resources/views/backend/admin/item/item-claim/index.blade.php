@@ -73,6 +73,9 @@
                                 <th>{{ __('item_claim.claim-full-name') }}</th>
                                 <th>{{ __('item_claim.claim-status') }}</th>
                                 <th>{{ __('backend.shared.action') }}</th>
+
+                                <th>individuals</th>
+                                <th>Date</th>
                             </tr>
                             </tfoot>
                             <tbody>
@@ -95,6 +98,12 @@
                                             <span class="text-danger">{{ __('item_claim.status-disapproved') }}</span>
                                         @endif
                                     </td>
+
+                                    <td>{{ $item_claim->individuals }}</td>
+
+                                    <td>{{ $item_claim->Date }}</td>
+
+
                                     <td>
                                         <a href="{{ route('admin.item-claims.edit', $item_claim->id) }}" class="btn btn-primary btn-circle">
                                             <i class="fas fa-cog"></i>
