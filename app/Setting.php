@@ -35,7 +35,7 @@ class Setting extends Model
 
     );
 
-    function lang($val, $lan)
+  static  function lang($val, $lan)
     {
         //   {{ \App\Setting::lang("","") }}
         $lang = DB::table('lang')->where('key', $val)->where('lang', $lan)->value('val');
