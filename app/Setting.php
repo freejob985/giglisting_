@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 use DB;
+use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
@@ -35,12 +35,12 @@ class Setting extends Model
 
     );
 
-static    function   lang($val, $lan)
+    function lang($val, $lan)
     {
-     //   {{ \App\Setting::lang("","") }}
+        //   {{ \App\Setting::lang("","") }}
         $lang = DB::table('lang')->where('key', $val)->where('lang', $lan)->value('val');
-       // dd($lang);
-        return  $lang; 
+        // dd($lang);
+        return $lang;
 
     }
 
