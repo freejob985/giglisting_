@@ -85,7 +85,7 @@ class ItemClaimController extends Controller
 
 
 
-        dd("Catch errors for script and full tracking ( 1 )");
+        
         $settings = app('site_global_settings');
         //$site_prefer_country_id = app('site_prefer_country_id');
 
