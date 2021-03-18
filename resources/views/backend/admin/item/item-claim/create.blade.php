@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    sssssssssssssssssssssssssss
+                    
                     <form method="POST" action="{{ route('admin.item-claims.store') }}" class="" enctype="multipart/form-data">
                         @csrf
 
@@ -102,6 +102,34 @@
                                 @enderror
                             </div>
                         </div>
+
+
+
+                        <div class="form-row mb-3">
+
+                            <div class="col-md-6">
+                                <label for="individuals" class="text-black">The number of individuals</label>
+                                <input id="individuals" type="text" class="form-control @error('individuals') is-invalid @enderror" name="individuals" value="">
+                                @error('individuals')
+                                <span class="invalid-tooltip">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="Date" class="text-black">Date</label>
+                                <input id="Date" type="text" class="form-control @error('Date') is-invalid @enderror" name="Date" value="{{ old('Date') }}">
+                                @error('Date')
+                                <span class="invalid-tooltip">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+
 
                         <div class="form-row mb-3">
                             <div class="col-md-12">
